@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Workflow #01 — Review Responder · TRY Playbook Vol. I</title>
+<meta name="description" content="Turn messy Google reviews into calm, professional replies in minutes. The free first workflow from TRY Playbook Vol. I — built for contractors and small business owners." />
+<meta name="theme-color" content="#fbf6ec" />
+<meta property="og:title" content="Review Responder — Free Chapter from TRY Playbook Vol. I" />
+<meta property="og:description" content="The AI workflow that helps contractors reply to every Google review in their voice, without sounding robotic or making risky claims." />
+<meta property="og:type" content="article" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23fbf6ec'/%3E%3Cpath d='M50 22 L78 76 L22 76 Z' fill='none' stroke='%23d6491c' stroke-width='8' stroke-linejoin='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- Top ribbon -->
+<div class="ribbon">
+  <div class="ribbon-left">
+    <span class="ribbon-mark">▲</span>
+    <span class="ribbon-brand">TRY PLAYBOOK</span>
+    <span class="ribbon-vol">· Vol. I · Free Chapter</span>
+  </div>
+  <div class="ribbon-right">
+    <a href="https://tryangleai.com">Back to tryangleai.com</a>
+  </div>
+</div>
+
+<!-- Mobile sticky progress (visible on narrow screens only) -->
+<div class="rail-mobile" id="railMobile">
+  <div class="rail-mobile-inner">
+    <span class="rail-mobile-brand">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M20 7 L34 31 L6 31 Z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/></svg>
+      TRY
+    </span>
+    <span class="rail-mobile-where">
+      <span class="rail-mobile-num">01</span> · <span id="railMobileSection">Review Responder</span>
+    </span>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- Left rail (desktop) -->
+  <aside class="rail" aria-label="Workflow progress">
+    <a href="https://tryangleai.com" class="rail-brand" aria-label="TRY home">
+      <span class="rail-brand-mark">
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 7 L34 31 L6 31 Z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="rail-brand-word">TRY</span>
+    </a>
+
+    <div class="rail-label">Workflow #01</div>
+    <ul class="rail-nav" id="railNav">
+      <li><a href="#outcome"   data-section="outcome"><span class="rail-num">01</span>Owner outcome</a></li>
+      <li><a href="#first-win" data-section="first-win"><span class="rail-num">02</span>5-min first win</a></li>
+      <li><a href="#use-when"  data-section="use-when"><span class="rail-num">03</span>Use this when</a></li>
+      <li><a href="#not-when"  data-section="not-when"><span class="rail-num">04</span>Don't use it for</a></li>
+      <li><a href="#tools"     data-section="tools"><span class="rail-num">05</span>Tools needed</a></li>
+      <li><a href="#setup"     data-section="setup"><span class="rail-num">06</span>Setup checklist</a></li>
+      <li><a href="#prompt"    data-section="prompt"><span class="rail-num">07</span>The master prompt</a></li>
+      <li><a href="#example"   data-section="example"><span class="rail-num">08</span>Example</a></li>
+      <li><a href="#qa"        data-section="qa"><span class="rail-num">09</span>QA checklist</a></li>
+      <li><a href="#edges"     data-section="edges"><span class="rail-num">10</span>Edge cases</a></li>
+      <li><a href="#approval"  data-section="approval"><span class="rail-num">11</span>Human approval</a></li>
+      <li><a href="#automate"  data-section="automate"><span class="rail-num">12</span>Automation upgrade</a></li>
+      <li><a href="#measure"   data-section="measure"><span class="rail-num">13</span>Measure the win</a></li>
+      <li><a href="#stuck"     data-section="stuck"><span class="rail-num">14</span>Stuck?</a></li>
+      <li><a href="#next"      data-section="next"><span class="rail-num">15</span>What's next</a></li>
+    </ul>
+
+    <div class="rail-foot">
+      <strong>TRY Playbook · Vol. I</strong><br/>
+      Workflow 01 of 12<br/>
+      v1.0 · May 2026
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="content">
+
+    <!-- Header -->
+    <header class="chapter-head">
+      <div class="chapter-meta">
+        <span class="chapter-tag"><span class="chapter-tag-mark">▲</span>FREE CHAPTER</span>
+        <span>20 min read</span>
+        <span class="dot">●</span>
+        <span>5 min to first win</span>
+        <span class="dot">●</span>
+        <span>For contractors & trades</span>
+      </div>
+      <div class="chapter-num">Workflow № 01</div>
+      <h1 class="chapter-title">Review<br/><em>Responder</em></h1>
+      <p class="chapter-deck">Turn messy Google reviews into calm, professional replies in minutes — without sounding like a robot or making promises that come back to bite you.</p>
+    </header>
+
+    <!-- 1. OUTCOME -->
+    <section id="outcome">
+      <div class="section-eyebrow"><span class="step-num">01</span><span>The owner outcome</span></div>
+      <h2 class="section-title">Every review gets a reply. <em>Every reply sounds like you.</em></h2>
+      <p class="lead">For most contractors, replying to Google reviews is the task that quietly slips. You mean to. You don't. The five-star ones feel awkward. The two-star ones make your stomach turn. So the tab stays open and Sunday becomes Monday.</p>
+      <p>This workflow fixes that. You'll get a calm, on-brand draft for any review — positive, neutral, or angry — in about 90 seconds. You read it, edit one or two words, paste it into Google Business Profile, post.</p>
+      <p>What changes when you actually do this:</p>
+      <ul>
+        <li><strong>Future customers see a business that responds.</strong> A homeowner comparing three roofers will pick the one whose owner replied to every review — even the bad ones.</li>
+        <li><strong>Negative reviews lose their teeth.</strong> A calm, specific reply turns a one-star rant into a public demonstration that you're a professional.</li>
+        <li><strong>Your Sunday night gets shorter.</strong> The pile of unreplied reviews stops being a low-grade weight you carry around.</li>
+      </ul>
+      <p>This is not a way to fake voice or auto-post. It is a way to draft, review, and approve faster.</p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- 2. FIVE-MINUTE FIRST WIN -->
+    <section id="first-win">
+      <div class="section-eyebrow"><span class="step-num">02</span><span>Five-minute first win</span></div>
+      <h2 class="section-title">Before you read anything else — <em>do this.</em></h2>
+      <div class="five-min">
+        <div class="five-min-tag">▲ Five-minute first win</div>
+        <h3>Run one real review through this, right now.</h3>
+        <p>Open ChatGPT, Claude, or Gemini in a new tab. Open your Google Business Profile and grab the text of <strong>one review you haven't replied to</strong> — ideally a recent one. Then come back, jump to <a href="#prompt" style="color: var(--paper); text-decoration: underline;">the master prompt</a>, paste it in, fill the brackets, hit run.</p>
+        <p>You will have a posted, professional reply in about five minutes. That's the moment this stops being theory.</p>
+      </div>
+      <p>If you skip this and just keep reading, your brain will file this under "interesting" instead of "working in my business." Don't do that. Five minutes. One review. Then come back.</p>
+    </section>
+
+    <!-- 3. USE THIS WHEN -->
+    <section id="use-when">
+      <div class="section-eyebrow"><span class="step-num">03</span><span>Use this when</span></div>
+      <h2 class="section-title">When this workflow earns its keep</h2>
+      <p>This is the right tool for the job in these situations:</p>
+      <ul>
+        <li><strong>Positive reviews</strong> you want to acknowledge without sounding like a form letter.</li>
+        <li><strong>Neutral reviews (3-star)</strong> where the customer is half-happy and you want to nudge them up.</li>
+        <li><strong>Complaints</strong> where the customer has a fair point and you want to take responsibility without grovelling.</li>
+        <li><strong>Repeat themes</strong> showing up across reviews — pricing surprises, scheduling slips, cleanup — where your reply doubles as public policy clarification.</li>
+        <li><strong>Busy weeks</strong> where you have a pile of reviews and no time to write each one from scratch.</li>
+      </ul>
+    </section>
+
+    <!-- 4. DO NOT USE -->
+    <section id="not-when">
+      <div class="section-eyebrow"><span class="step-num">04</span><span>Don't use it for</span></div>
+      <h2 class="section-title">When to <em>close this tab</em> and pick up the phone</h2>
+      <div class="callout warn">
+        <p class="callout-title"><span class="callout-title-mark">⚠</span>STOP — these need a human, not a draft</p>
+        <p>Do not run this workflow if the review involves:</p>
+        <ul>
+          <li>An <strong>active legal dispute</strong> or threat of one</li>
+          <li>A <strong>safety incident</strong> — injury on site, gas, fire, structural collapse</li>
+          <li>An <strong>employee accused by name</strong> of theft, harassment, intoxication, or violence</li>
+          <li>A <strong>refund or chargeback dispute</strong> where you haven't yet checked your contract</li>
+          <li>Allegations of <strong>code violations</strong>, permit issues, or unlicensed work</li>
+          <li>Anything you'd want your <strong>attorney or insurance carrier</strong> to see before you reply</li>
+        </ul>
+        <p style="margin-top:14px;">Reviews in these categories are reputation events, not customer service. Pick up the phone. Talk to counsel or your carrier. <em>Then</em> decide whether to reply at all.</p>
+      </div>
+    </section>
+
+    <!-- 5. TOOLS -->
+    <section id="tools">
+      <div class="section-eyebrow"><span class="step-num">05</span><span>Tools needed</span></div>
+      <h2 class="section-title">The stack — <em>all free to start</em></h2>
+      <ul>
+        <li><strong>One AI tool</strong> — ChatGPT (free), Claude (free), or Gemini (free). Pick one and stick with it for consistency. ChatGPT is what this workflow was tested on.</li>
+        <li><strong>Google Business Profile</strong> — where reviews live and where replies post. Free.</li>
+        <li><strong>Notes app or Google Doc</strong> — to save your "business context block" so you don't retype it each time.</li>
+        <li><strong>Optional: Google Sheet</strong> — to track reviews and time saved. There's a worksheet for this in <a href="#measure">Measure the win</a>.</li>
+      </ul>
+      <p class="mono" style="font-size:14px;color:var(--ink-mute);margin-top:14px;">Free tiers handle the volume most contractors will hit. If you're processing 50+ reviews per week, you'll want a paid AI plan, but you'll know when you get there.</p>
+    </section>
+
+    <!-- 6. SETUP CHECKLIST -->
+    <section id="setup">
+      <div class="section-eyebrow"><span class="step-num">06</span><span>Setup checklist</span></div>
+      <h2 class="section-title">Fill these out <em>once</em>. Reuse forever.</h2>
+      <p>Before the prompt works well, the AI needs to know who you are. Spend 10 minutes filling out this block in a Notes app or Google Doc. From now on you paste this into every prompt.</p>
+
+      <ul class="checklist" id="setupChecklist">
+        <li data-step="biz-name"><strong>Business name & trade</strong> — e.g., "Joe's Roofing — residential roofing in Suffolk County, NY"</li>
+        <li data-step="owner"><strong>Owner first name</strong> — what you sign replies with</li>
+        <li data-step="tone"><strong>Tone</strong> — 3-5 words. "Direct, warm, not corporate." Or "blunt but fair." Or "old-school polite."</li>
+        <li data-step="services"><strong>Top 3-5 services</strong> — the work you actually do, in customer language</li>
+        <li data-step="can-promise"><strong>What you CAN say</strong> — service area, free estimates, licensing/insurance, warranty terms you actually offer</li>
+        <li data-step="cant-promise"><strong>What you CANNOT say</strong> — never invent discounts, never admit legal fault, never quote prices, never promise timelines without checking the calendar</li>
+        <li data-step="escalation"><strong>Escalation rule</strong> — "For anything involving safety, injury, or legal claims, do not reply. Flag for me to call."</li>
+        <li data-step="links"><strong>Review platforms</strong> — Google Business Profile URL, Yelp URL, Angi, HomeAdvisor, Houzz, BBB, anywhere customers post about you</li>
+      </ul>
+    </section>
+
+    <!-- 7. MASTER PROMPT -->
+    <section id="prompt">
+      <div class="section-eyebrow"><span class="step-num">07</span><span>The master prompt</span></div>
+      <h2 class="section-title">The prompt that does the heavy lifting</h2>
+      <p>Copy this. Fill in the bracketed parts using your setup block from Step 6. Paste the review at the bottom. The AI returns two drafts you can choose between.</p>
+
+      <div class="callout warn">
+        <p class="callout-title"><span class="callout-title-mark">⚠</span>BEFORE YOU PASTE — REDACT</p>
+        <p>Reviews on Google are public, so the review text itself is safe to paste. <strong>But never paste private data</strong> alongside it: customer phone numbers, order numbers, addresses, payment details, internal employee names, or any private message a customer sent you through DM or email. Consumer AI tools may use your inputs to train future models — keep private business data out.</p>
+      </div>
+
+      <div class="prompt-block">
+        <div class="prompt-head">
+          <span class="prompt-head-label">Master Prompt — Review Responder</span>
+          <span class="prompt-head-meta">v1.0 · ChatGPT / Claude / Gemini</span>
+          <button class="copy-btn" id="copyPrompt" data-target="promptBody" aria-label="Copy prompt to clipboard">Copy</button>
+        </div>
+<pre class="prompt-body" id="promptBody">ROLE
+You are a thoughtful small business owner replying to a public review.
+You write the way you'd talk in person — never corporate, never defensive,
+never falsely cheerful. You sound like a person, not a brand.
+
+ABOUT MY BUSINESS
+- Name & trade: <span class="var">[e.g., Joe's Roofing — residential roofing in Suffolk County, NY]</span>
+- My first name: <span class="var">[FIRST NAME]</span>
+- Tone in 3-5 words: <span class="var">[e.g., direct, warm, not corporate]</span>
+- Top services: <span class="var">[3-5 services in plain language]</span>
+
+WHAT I CAN SAY
+<span class="var">[What you can promise: service area, free estimates, licensing, warranty terms you actually offer, etc.]</span>
+
+WHAT I CANNOT SAY — HARD RULES
+- Never invent discounts, refunds, comped services, or freebies I didn't authorize.
+- Never admit legal fault, code violations, or licensing problems.
+- Never quote prices or timelines.
+- Never make medical, safety, or insurance claims.
+- Never make up facts about the job, the crew, or the customer.
+- Never name an employee unless I tell you to.
+- If a fact isn't in my context above, say "let's take this offline" instead of guessing.
+
+THE REVIEW I'M REPLYING TO
+Platform: <span class="var">[Google / Yelp / Facebook / etc.]</span>
+Star rating: <span class="var">[1-5]</span>
+Reviewer first name: <span class="var">[FIRST NAME ONLY — never last name]</span>
+Review text:
+<span class="var">[PASTE THE REVIEW VERBATIM HERE]</span>
+
+BEFORE WRITING — think privately:
+- What is the customer actually upset or happy about? Be specific.
+- For negatives: what can I take responsibility for without being defensive?
+- What is the single concrete next step that makes sense?
+- Is there anything in this review that I cannot verify? (If so, do not address that point directly — keep the reply general on that piece.)
+
+NOW WRITE THE REPLY
+- 2-4 sentences for positive reviews (4-5 stars)
+- 3-5 sentences for negative reviews (1-3 stars)
+- Open with the reviewer's first name
+- For positives: warmth, one specific reference to what they said, no sign-off needed
+- For negatives: specific acknowledgment, accountability where appropriate, one concrete next step ("call me at [number]" or "I'll reach out tomorrow"), sign with my first name
+- Never promotional. Never "we'd love to have you back for more amazing service."
+
+STOP AND FLAG — do not draft a reply if the review contains:
+- Profanity directed at staff
+- Accusations of crimes, fraud, or code violations
+- A specific employee named (return the name to me to handle)
+- Mentions of injury, safety incident, or property damage I haven't seen
+- Content that reads as fake, extortionate, or competitor-planted
+For any of these, return exactly: "FLAG — owner judgment needed: [one-sentence reason]"
+
+OUTPUT FORMAT
+Return two versions labeled V1 and V2. After each, add one line:
+"WHY THIS VERSION:" — explain in 10 words or fewer what makes it different from the other.</pre>
+      </div>
+
+      <div class="callout">
+        <p class="callout-title"><span class="callout-title-mark">▲</span>SAVE THIS ONCE — USE IT FOREVER</p>
+        <p>After your first successful run, save this prompt as a <strong>ChatGPT Custom GPT</strong> or a <strong>Claude Project</strong> with your business context baked in. Takes four minutes once. After that, you only paste the new review. That's the real workflow.</p>
+      </div>
+    </section>
+
+    <!-- 8. EXAMPLE -->
+    <section id="example">
+      <div class="section-eyebrow"><span class="step-num">08</span><span>Example</span></div>
+      <h2 class="section-title">What good looks like — <em>a real one.</em></h2>
+      <p>Here's a 2-star review for a roofing contractor, run through the workflow with the AI's first draft, the human refinement, and a note on why the final version works.</p>
+
+      <h3 class="sub-title">The review (the input)</h3>
+      <div class="example">
+        <div class="example-row">
+          <div class="example-label"><span class="example-label-mark">▲</span>REVIEW</div>
+          <div class="example-body review">
+            "Got my roof replaced last month. The crew did the work fine but they showed up almost two hours late on day one and I had to call the office twice to find out where they were. The cleanup at the end was also pretty rough — I was finding nails in my driveway for a week. Wouldn't say I'd hire again." — Mike R., 2★
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-title">AI first draft (V1)</h3>
+      <div class="example">
+        <div class="example-row">
+          <div class="example-label"><span class="example-label-mark">▲</span>V1</div>
+          <div class="example-body">
+            Hi Mike — I'm sorry about the late start on day one. That's on us. We had a delay at our previous job that morning and we should have called you proactively instead of making you chase us. On the nails — we use a magnetic roller for cleanup but it sounds like we missed a pass on your driveway. I'd like to send our foreman back this week to do another sweep, on the house. I'll call you Monday to set it up.<br/>— Joe
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Owner's final version (V1 with two edits)</h3>
+      <div class="example">
+        <div class="example-row">
+          <div class="example-label"><span class="example-label-mark">▲</span>FINAL</div>
+          <div class="example-body">
+            Hi Mike — I'm sorry about the late start on day one. That's on us, and we should have called you instead of making you chase us. On the nails — we run a magnetic roller for cleanup but it sounds like we missed a pass on your driveway. I'd like to send my foreman back this week to do another sweep. I'll call you Monday to set it up.<br/><span class="signoff">— Joe</span>
+          </div>
+        </div>
+      </div>
+
+      <p><strong>Why this final version works — and what the owner cut:</strong> Compare V1 to FINAL carefully. The owner cut <em>two</em> things the AI invented: (1) "We had a delay at our previous job that morning" — the AI made that up, the owner doesn't actually remember why the crew was late, so it goes. (2) "on the house" — the owner doesn't want to set a precedent of free returns for every cleanup complaint. <strong>This is the core skill of using AI well: catching invented facts before they get posted.</strong> The final reply still names the two real issues (late start, nails), takes responsibility without grovelling, and offers a concrete next step. Total time from new review to posted reply: <strong>about 90 seconds</strong>.</p>
+    </section>
+
+    <!-- 9. QA CHECKLIST -->
+    <section id="qa">
+      <div class="section-eyebrow"><span class="step-num">09</span><span>QA checklist</span></div>
+      <h2 class="section-title">Before you hit <em>Post Reply</em></h2>
+      <p>Read the draft out loud. Then walk this checklist. It takes 30 seconds. It is the difference between a reply you're proud of and one that screenshots badly.</p>
+
+      <ul class="checklist" id="qaChecklist">
+        <li><strong>Is every fact true?</strong> The AI doesn't know what actually happened on the job. Anything specific in the reply — dates, names, what the crew did — has to be true.</li>
+        <li><strong>Is it calm?</strong> Read it as if you were the upset customer. Does it sound defensive? Sarcastic? Performatively humble?</li>
+        <li><strong>Does it avoid blame?</strong> No "well, our records show…" No "as you may recall…" No passive-aggression.</li>
+        <li><strong>Does it avoid overpromising?</strong> No invented discounts, free services, refunds, or guarantees you didn't authorize.</li>
+        <li><strong>Does it invite offline follow-up where appropriate?</strong> "Call me at 555-0143" or "I'll reach out Monday" — not "DM us!" or "fill out our contact form."</li>
+        <li><strong>Does it sound human?</strong> If a friend read it out loud, would they say "that sounds like you" or "that sounds like a brand"?</li>
+        <li><strong>Would you be okay if a competitor screenshotted this?</strong> Because they might. Every public reply is permanent and indexed by Google.</li>
+      </ul>
+    </section>
+
+    <!-- 10. EDGE CASES -->
+    <section id="edges">
+      <div class="section-eyebrow"><span class="step-num">10</span><span>Edge cases</span></div>
+      <h2 class="section-title">When the review is <em>weird, hostile, or risky</em></h2>
+      <p>This is the section that makes this workflow worth real money. AI handles the easy 80% of reviews. These are the ones where most owners get it wrong.</p>
+
+      <div class="edges">
+        <div class="edge">
+          <h4>Angry customer, fair point</h4>
+          <p>Acknowledge the specific issue. Take responsibility on the part that's yours. Offer one concrete next step. Don't grovel — owners apologizing too hard read as weak. Aim for "calm, accountable, professional."</p>
+        </div>
+        <div class="edge">
+          <h4>Angry customer, false claim</h4>
+          <p>Don't litigate it in the reply. Say: "I'd like to talk this through directly — can you call me at [number] so I can hear what happened?" Anything else turns into a public argument you can't win.</p>
+        </div>
+        <div class="edge">
+          <h4>Profanity directed at staff</h4>
+          <p>Flag Google for removal first (it usually violates their content policy). Do not reply in kind. If Google leaves it up, post one calm sentence: "We take our team's safety seriously and won't be engaging with this review publicly."</p>
+        </div>
+        <div class="edge">
+          <h4>Review written in Spanish (or another language)</h4>
+          <p>Ask the AI to draft your reply in <em>both</em> the customer's language and English. Post in their language. Read both out loud. If you don't speak the language, have a bilingual crew member or your accountant check the translation before posting.</p>
+        </div>
+        <div class="edge">
+          <h4>Competitor or troll review</h4>
+          <p>Reviews that are vague, don't mention specifics you can verify, come from accounts with one review only, or arrive in clusters are often fake. Flag with Google first. If it stays up, reply once, calmly, then stop. Don't argue with anonymous accounts.</p>
+        </div>
+        <div class="edge">
+          <h4>Review mentions an employee by name</h4>
+          <p>Never name them in your public reply. Talk to the employee first. If the complaint is fair, address it as "my crew" or "our team." If it's an accusation of bad behavior, this jumps to <strong>Don't use this workflow</strong> — it goes to your attorney or HR person, not Google.</p>
+        </div>
+        <div class="edge">
+          <h4>Customer demands a refund publicly</h4>
+          <p>Do not promise or deny a refund in public. Say: "I want to make sure I understand exactly what happened — can you call me at [number]?" Handle the refund decision offline against your actual contract and policy.</p>
+        </div>
+        <div class="edge">
+          <h4>Safety allegation — injury, fire, structural</h4>
+          <p>Do not reply. Do not run this workflow. Call your insurance carrier immediately. Anything you write in public can be used in a claim. <strong>Silence in public + action in private</strong> is the right move here.</p>
+        </div>
+      </div>
+
+      <div class="callout warn">
+        <p class="callout-title"><span class="callout-title-mark">⚠</span>THE PROFANITY-DISCOUNT TRAP</p>
+        <p><strong>The single biggest risk with AI-drafted replies is the AI offering a discount, refund, or freebie to make an angry customer go away.</strong> ChatGPT and Claude both default to "be helpful and accommodating," which on an angry review means inventing a promotional offer to defuse the situation. Your master prompt above explicitly forbids this. <em>Read every draft for fabricated offers before posting.</em> If you see a discount, refund, free service call, or guarantee that you didn't authorize, delete it from the draft.</p>
+      </div>
+    </section>
+
+    <!-- 11. HUMAN APPROVAL -->
+    <section id="approval">
+      <div class="section-eyebrow"><span class="step-num">11</span><span>Human approval rule</span></div>
+      <h2 class="section-title">AI drafts. <em>You publish.</em> Always.</h2>
+      <p>The single rule that keeps this workflow safe and out of trouble:</p>
+      <div class="callout">
+        <p class="callout-title"><span class="callout-title-mark">▲</span>THE TRY RULE</p>
+        <p><strong>The AI is your drafter. You are the publisher.</strong> Every word that gets posted under your business name is something you read, edited if needed, and approved. Nothing auto-posts. Nothing goes out unread. This is non-negotiable, and it's what separates a real business using AI from someone embarrassing themselves on Google.</p>
+      </div>
+      <p>Two minutes of human review on a 90-second AI draft is still the fastest professional review workflow most contractors will ever build. Don't be tempted to cut the two minutes.</p>
+    </section>
+
+    <!-- 12. AUTOMATION UPGRADE -->
+    <section id="automate">
+      <div class="section-eyebrow"><span class="step-num">12</span><span>Automation upgrade (optional)</span></div>
+      <h2 class="section-title">Stay manual until <em>this</em> is true</h2>
+      <p>Most contractors should run this workflow manually for the first 60 days. Open phone twice a day, check reviews, run the prompt, edit, post. 90 seconds per review.</p>
+      <p>Only consider the automation upgrades once you have a real review approval process in place and you're handling 10+ reviews per week. The upgrade ladder uses <em>Levels</em> (not Tiers — those refer to the TRY product ladder elsewhere):</p>
+      <ol>
+        <li><strong>Level 1 (start here):</strong> Manual. Phone in hand, two checks a day.</li>
+        <li><strong>Level 2:</strong> Save your master prompt as a ChatGPT Custom GPT or Claude Project. Your business context is baked in. You just paste new reviews. ~10 seconds saved per review.</li>
+        <li><strong>Level 3:</strong> Add a Google Sheet to log every review and your time-to-reply. Once a week, you review trends — which reviews are taking longest, which themes are recurring.</li>
+        <li><strong>Level 4:</strong> Zapier or Make pulls new Google reviews → posts to a Slack channel → you reply from there. Free Zapier polls every 15 min, which is faster than most owners check manually. <em>Still nothing auto-posts.</em></li>
+      </ol>
+      <p>Anything beyond Level 4 — auto-posting AI replies to public review platforms — is a bad idea for a service business. The reputational downside of one bad AI reply is bigger than every minute it saves.</p>
+    </section>
+
+    <!-- 13. MEASURE -->
+    <section id="measure">
+      <div class="section-eyebrow"><span class="step-num">13</span><span>Measure the win</span></div>
+      <h2 class="section-title">Numbers that prove this <em>actually works</em></h2>
+      <p>If this workflow isn't saving you measurable time after two weeks, something's wrong. Track this for 14 days and you'll know.</p>
+
+      <table class="worksheet">
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Reviews handled</th>
+            <th>Avg. minutes per reply, before</th>
+            <th>Avg. minutes per reply, now</th>
+            <th>Hours saved this week</th>
+            <th>Reviews you would have skipped</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Week 1</td><td><span class="fill">__</span></td><td><span class="fill">__ min</span></td><td><span class="fill">__ min</span></td><td><span class="fill">__ hrs</span></td><td><span class="fill">__</span></td></tr>
+          <tr><td>Week 2</td><td><span class="fill">__</span></td><td><span class="fill">__ min</span></td><td><span class="fill">__ min</span></td><td><span class="fill">__ hrs</span></td><td><span class="fill">__</span></td></tr>
+        </tbody>
+      </table>
+
+      <p>Most contractors who run this workflow honestly report:</p>
+      <ul>
+        <li><strong>Time per reply drops from 8-15 minutes to 1-3 minutes</strong> — most of that drop is "I no longer stare at the screen trying to figure out how to start."</li>
+        <li><strong>Reply rate moves from under 40% to over 90%</strong> — the reviews you used to skip now get answered.</li>
+        <li><strong>One or two reviewers update their stars</strong> after a thoughtful negative reply. This is not guaranteed, but it happens often enough to be a known pattern.</li>
+      </ul>
+
+      <p class="mono" style="font-size:14px;color:var(--ink-mute);">If your numbers are nowhere close to this after two weeks, jump to the Stuck section below. We'll figure out what broke.</p>
+    </section>
+
+    <!-- 14. STUCK -->
+    <section id="stuck">
+      <div class="section-eyebrow"><span class="step-num">14</span><span>Stuck?</span></div>
+      <div class="callout stuck">
+        <p class="callout-title"><span class="callout-title-mark">▲</span>STUCK ON THIS WORKFLOW?</p>
+        <p><strong>Tell us where it broke.</strong> Email <a href="mailto:workshop@tryangleai.com?subject=TRY%20Workshop%20Help%20%E2%80%94%20Review%20Responder&body=Where%20did%20you%20get%20stuck%3F%0A%0A1.%20What%20business%20type%3A%0A2.%20Which%20AI%20tool%20you%20used%20(ChatGPT%2FClaude%2FGemini)%3A%0A3.%20Which%20step%20broke%20(1-13)%3A%0A4.%20What%20happened%3A%0A%0A(If%20you%20paste%20a%20screenshot%2C%20redact%20customer%20names%2C%20phone%20numbers%2C%20and%20any%20private%20info%20first.)" style="color:var(--paper);text-decoration:underline;text-decoration-color:var(--orange);">workshop@tryangleai.com</a> with where you got stuck. We read every email and reply within a few business days — usually faster.</p>
+        <p>Include: your business type, which AI tool you used, which step broke, and what happened. <strong>Redact customer names, phone numbers, and any private info before pasting anything.</strong></p>
+        <a class="stuck-btn" href="mailto:workshop@tryangleai.com?subject=TRY%20Workshop%20Help%20%E2%80%94%20Review%20Responder&body=Where%20did%20you%20get%20stuck%3F%0A%0A1.%20What%20business%20type%3A%0A2.%20Which%20AI%20tool%20you%20used%20(ChatGPT%2FClaude%2FGemini)%3A%0A3.%20Which%20step%20broke%20(1-13)%3A%0A4.%20What%20happened%3A%0A%0A(If%20you%20paste%20a%20screenshot%2C%20redact%20customer%20names%2C%20phone%20numbers%2C%20and%20any%20private%20info%20first.)">Email us where you got stuck</a>
+        <p class="stuck-fine">Manual reply, real human, no auto-responder. We'd rather hear about a broken step than have you quietly close the tab.</p>
+      </div>
+    </section>
+
+    <!-- 15. WHAT'S NEXT (upgrade soft CTA) -->
+    <section id="next">
+      <div class="upgrade">
+        <div class="upgrade-eyebrow">▲ WHAT'S NEXT</div>
+        <h3>This was Workflow 1 of 12. <em>The other eleven are waiting.</em></h3>
+        <p>If this saved you measurable time on reviews, the same structure handles quotes, missed calls, email triage, invoice follow-ups, social content, lead qualification, customer re-engagement, hiring posts, meeting notes, contract summaries, and your weekly owner brief.</p>
+        <p>The full TRY Playbook Vol. I — all 12 workflows in this same format, written for contractors and small business owners — is <strong>$9.99 founding price</strong> for the first 100 readers. After that, $27.</p>
+        <div class="upgrade-ctas">
+          <a class="upgrade-cta primary" href="https://tryangleai.com/#offer">Get Vol. I — $9.99</a>
+          <a class="upgrade-cta" href="mailto:workshop@tryangleai.com?subject=Contractor%20Pack%20Waitlist">Join Contractor Pack waitlist</a>
+          <a class="upgrade-cta" href="mailto:workshop@tryangleai.com?subject=Done-with-you%20implementation%20inquiry">Done-with-you implementation</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-marks">▲ ▲ ▲</div>
+
+    <!-- Footer -->
+    <footer class="chapter-footer">
+      <p><span class="footer-brand">TRY Playbook · Vol. I</span> · Workflow 01 of 12 · v1.0 · May 2026</p>
+      <p>Published by Tryangle Holdings LLC, New York. © 2026. All rights reserved. Single-user license — do not redistribute.</p>
+      <p>This chapter is yours to keep. Lifetime updates included for Vol. I buyers at <a href="https://tryangleai.com/updates">tryangleai.com/updates</a>.</p>
+
+      <p class="disclaim">This workflow is educational material for small business owners. It is not legal, financial, tax, employment, or insurance advice. AI-generated drafts must be reviewed by a human before publication. The buyer is responsible for every word posted under their business name. For matters involving legal disputes, safety incidents, employment law, or regulatory compliance, consult appropriately licensed professionals.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script>
+  // Section tracking — updates active state on left rail + mobile breadcrumb
+  (function () {
+    'use strict';
+
+    const navLinks = document.querySelectorAll('.rail-nav a');
+    const sections = Array.from(navLinks).map(a => {
+      const id = a.getAttribute('href').slice(1);
+      return { id, el: document.getElementById(id), link: a, label: a.querySelector('span:last-child').textContent };
+    }).filter(s => s.el);
+
+    const mobileWhere = document.getElementById('railMobileSection');
+
+    function updateActive() {
+      const scrollY = window.scrollY + window.innerHeight * 0.3;
+      let current = sections[0];
+      for (const s of sections) {
+        if (s.el.offsetTop <= scrollY) current = s;
+      }
+      navLinks.forEach(a => a.classList.remove('active'));
+      if (current && current.link) {
+        current.link.classList.add('active');
+        if (mobileWhere) mobileWhere.textContent = current.label;
+      }
+    }
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => { updateActive(); ticking = false; });
+        ticking = true;
+      }
+    }, { passive: true });
+    updateActive();
+
+    // Copy prompt button
+    const copyBtn = document.getElementById('copyPrompt');
+    const promptBody = document.getElementById('promptBody');
+    if (copyBtn && promptBody) {
+      copyBtn.addEventListener('click', async () => {
+        try {
+          const text = promptBody.innerText;
+          await navigator.clipboard.writeText(text);
+          copyBtn.classList.add('copied');
+          copyBtn.textContent = 'Copied ✓';
+          setTimeout(() => {
+            copyBtn.classList.remove('copied');
+            copyBtn.textContent = 'Copy';
+          }, 2200);
+        } catch (err) {
+          copyBtn.textContent = 'Press Ctrl+C';
+          setTimeout(() => { copyBtn.textContent = 'Copy'; }, 2200);
+        }
+      });
+    }
+
+    // Checklist click-to-mark
+    document.querySelectorAll('.checklist li').forEach(li => {
+      li.style.cursor = 'pointer';
+      li.addEventListener('click', () => li.classList.toggle('done'));
+    });
+  })();
+</script>
+
+</body>
+</html>

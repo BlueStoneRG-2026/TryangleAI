@@ -1,0 +1,4 @@
+# Clean URLs for the free chapter
+/chapter-1       /chapter-1-free/   301
+/read-chapter-1  /chapter-1-free/   301
+/free            /chapter-1-free/   301
